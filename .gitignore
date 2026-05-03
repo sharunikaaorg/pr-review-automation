@@ -1,0 +1,14 @@
+# Environment
+.env
+venv/
+__pycache__/
+
+# Database
+*.db
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
