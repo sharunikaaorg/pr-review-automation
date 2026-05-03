@@ -61,7 +61,7 @@ class MainAgent:
                 'code_type': code_type,
                 'summary': summary,
                 'diff_analysis': analysis,
-                'metadata': {
+                'pr_metadata': {
                     'pr_title': pr_title,
                     'pr_description': pr_description,
                     'files_changed': len(file_list),

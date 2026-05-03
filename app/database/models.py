@@ -19,7 +19,7 @@ class PRReview(Base):
     updated_at = Column(DateTime(timezone=True), onupdate=func.now())
     
     # Store additional metadata
-    metadata = Column(JSON, nullable=True)
+    pr_metadata = Column("metadata", JSON, nullable=True)
 
 class Feedback(Base):
     __tablename__ = "feedback"

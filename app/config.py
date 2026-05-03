@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(override=True)
 
 class Settings:
     GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "")
@@ -10,7 +10,7 @@ class Settings:
     DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./pr_reviews.db")
     
     # Groq settings
-    GROQ_MODEL: str = "mixtral-8x7b-32768"
+    GROQ_MODEL: str = "llama-3.3-70b-versatile"
     
     # GitHub API settings
     GITHUB_API_URL: str = "https://api.github.com"
